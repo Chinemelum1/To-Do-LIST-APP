@@ -1,0 +1,275 @@
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #dbd3d3;
+}
+
+.headtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: -20; */
+}
+
+.headtext p {
+  margin-top: -20px;
+}
+
+#searchbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.search_bar {
+  width: 50%;
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #dbd3d3;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  /* padding-right: 100px; */
+}
+
+/* .searchbtn {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-radius: 14px;
+  text-align: center;
+  border: none;
+} */
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #171717;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.6rem;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+button span:not(:nth-child(6)) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 30px;
+  width: 30px;
+  background-color: #0c66ed;
+  border-radius: 50%;
+  transition: 0.6s ease;
+}
+
+button span:nth-child(6) {
+  position: relative;
+}
+
+button span:nth-child(1) {
+  transform: translate(-3.3em, -4em);
+}
+
+button span:nth-child(2) {
+  transform: translate(-6em, 1.3em);
+}
+
+button span:nth-child(3) {
+  transform: translate(-0.2em, 1.8em);
+}
+
+button span:nth-child(4) {
+  transform: translate(3.5em, 1.4em);
+}
+
+button span:nth-child(5) {
+  transform: translate(3.5em, -3.8em);
+}
+
+button:hover span:not(:nth-child(6)) {
+  transform: translate(-50%, -50%) scale(4);
+  transition: 1.5s ease;
+}
+
+.addtask {
+  width: 30%;
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #dbd3d3;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.taskage {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+/* .button {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid #34974d;
+  background-color: #3aa856;
+}
+
+.button,
+.button__icon,
+.button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #34974d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.button:hover {
+  background: #34974d;
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active .button__icon {
+  background-color: #2e8644;
+}
+
+.button:active {
+  border: 1px solid #2e8644;
+} */
+
+.tasksdone {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tasksdone button {
+  text-decoration-color: black;
+  border: black 2px solid;
+  background-color: #dbd3d3;
+}
+
+.tasks1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 460px;
+  margin-left: 20px;
+  background-color: #dbd3d3;
+  box-shadow: 0px 4px 28px -2px #00000014;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: solid 7px blue;
+  border-right: solid 7px blue;
+  /* border: none; */
+  border-radius: 7px;
+}
+
+.checkbox {
+  display: flex;
+  height: 35vh;
+  overflow-y: scroll;
+  flex-direction: column;
+  width: 70%;
+  gap: 10px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  /* display: none; */
+}
+
+.checkbox::-webkit-scrollbar {
+  display: none;
+}
+
+.Edit {
+  background-color: green;
+}
+
+.Remove {
+  background-color: #b70e0e;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  /* position: relative; */
+}
+
+.footer img {
+  width: 100%;
+}
+
+/* .close {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+/* align-content: center; */
+/* position: fixed; */
+
+/* .checkbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+tasks1 {
+  width: calc(50% - 10px); Two tasks per row with a small gap
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ditz {
+  margin-top: 10px;
+} */

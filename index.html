@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>📝 TO DO APP</title>
+  </head>
+  <body>
+    <div class="close">
+      <div class="headtext">
+        <h1 style="color: #2b08b2"><b>TO DO-LIST 📝</b></h1>
+        <p>Create and manage your task here and stay tidied up 😊</p>
+      </div>
+
+      <div id="searchbar">
+        <input class="search_bar" placeholder="Search" />
+        <!-- <button class="searchbtn"><b>Search</b></button> -->
+
+        <button>
+          <span class="circle1"></span>
+          <span class="circle2"></span>
+          <span class="circle3"></span>
+          <span class="circle4"></span>
+          <span class="circle5"></span>
+          <span class="text">Search</span>
+        </button>
+      </div>
+
+      <div class="taskage">
+        <input class="addtask" placeholder="What are you up to" />
+        <button class="buttonz">Add Task</button>
+      </div>
+
+      <div class="tasksdone">
+        <button style="color: black">Completed Tasks</button>
+        <button style="color: black">On Going Tasks</button>
+      </div>
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" id="tasks" name="list" value="tasks" />
+      <label for="tasks">
+        <div class="tasks1">
+          <div class="value">
+            <p class="Activity2">Activity</p>
+            <p class="Activity"><b>Read A Book 📔</b></p>
+          </div>
+          <div class="ditz">
+            <button class="Edit">Edit</button>
+            <button class="Remove">Remove Task</button>
+          </div>
+        </div> </label
+      ><br />
+    </div>
+
+    <!-- <div class="footer">
+      <img src="ASSETS/IMG/Rectangle 1.svg" />
+    </div> -->
+
+    <!-- <button type="button" class="button">
+          <span class="button__text">Add Item</span>
+          <span class="button__icon"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke="currentColor"
+              height="24"
+              fill="none"
+              class="svg"
+            >
+              <line y2="19" y1="5" x2="12" x1="12"></line>
+              <line y2="12" y1="12" x2="19" x1="5"></line></svg
+          ></span>
+        </button> -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
